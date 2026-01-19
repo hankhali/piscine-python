@@ -1,4 +1,4 @@
-# Python Piscine
+# Piscine Python
 
 A Python learning project repository.
 
