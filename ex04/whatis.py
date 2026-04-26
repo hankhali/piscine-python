@@ -15,12 +15,10 @@ def main() -> None:
     try:
         if len(sys.argv) == 1:
             return
-        if len(sys.argv) != 2:
-            raise AssertionError("more than one argument is provided")
+        assert len(sys.argv) == 2, "more than one argument is provided"
 
         arg = sys.argv[1]
-        if not is_integer_string(arg):
-            raise AssertionError("argument is not an integer")
+        assert is_integer_string(arg), "argument is not an integer"
 
         n = int(arg)
         if n % 2 == 0:
