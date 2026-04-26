@@ -52,15 +52,14 @@ def encode(text: str) -> str:
         elif ch in MORSE:
             tokens.append(MORSE[ch])
         else:
-            raise AssertionError("the arguments are bad")
+            assert False, "the arguments are bad"
     return " ".join(tokens)
 
 
 def main() -> None:
     """Parse argument and print Morse encoding."""
     try:
-        if len(sys.argv) != 2:
-            raise AssertionError("the arguments are bad")
+        assert len(sys.argv) == 2, "the arguments are bad"
         print(encode(sys.argv[1]))
     except AssertionError as exc:
         print(f"AssertionError: {exc}")

@@ -15,13 +15,10 @@ def is_int_string(s: str) -> bool:
 def main() -> None:
     """Print words longer than N from a space-separated string."""
     try:
-        if len(sys.argv) != 3:
-            raise AssertionError("the arguments are bad")
-
+        assert len(sys.argv) == 3, "the arguments are bad"
         s = sys.argv[1]
         n_str = sys.argv[2]
-        if not is_int_string(n_str):
-            raise AssertionError("the arguments are bad")
+        assert is_int_string(n_str), "the arguments are bad"
 
         n = int(n_str)
         words = s.split(" ")

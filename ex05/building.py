@@ -26,8 +26,7 @@ def analyze_text(text: str) -> dict[str, int]:
 def main() -> None:
     """Standalone program: count character categories."""
     try:
-        if len(sys.argv) > 2:
-            raise AssertionError("more than one argument is provided")
+        assert len(sys.argv) <= 2, "more than one argument is provided"
 
         if len(sys.argv) == 2:
             text = sys.argv[1]
