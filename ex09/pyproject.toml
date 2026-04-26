@@ -12,4 +12,6 @@ authors = [
   { name = "hanieh", email = "hankhali@student.42abudhabi.ae" }
 ]
 license = { text = "MIT" }
-home-page = "https://github.com/hanieh/ft_package"
+
+[project.urls]
+Homepage = "https://github.com/hanieh/ft_package"
