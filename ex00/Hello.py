@@ -10,10 +10,10 @@ def main() -> None:
 
     # Modify values to match the required output
     ft_list[1] = "World!"
-    ft_tuple = ("Hello", "France!")
+    ft_tuple = ("Hello", "United Arab Emirates!")
     ft_set.remove("tutu!")
-    ft_set.add("Paris!")
-    ft_dict["Hello"] = "42Paris!"
+    ft_set.add("Abu Dhabi!")
+    ft_dict["Hello"] = "42Abu Dhabi!"
 
     print(ft_list)
     print(ft_tuple)
