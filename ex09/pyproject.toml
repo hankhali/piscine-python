@@ -9,5 +9,7 @@ description = "A tiny package for the Python piscine."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  { name = "hanieh" }
+  { name = "hanieh", email = "hankhali@student.42abudhabi.ae" }
 ]
+license = { text = "MIT" }
+home-page = "https://github.com/hanieh/ft_package"

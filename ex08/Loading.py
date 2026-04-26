@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-import sys
 import time
 
 
@@ -12,7 +11,7 @@ def _fmt_mmss(seconds: float) -> str:
     return f"{mins:02d}:{secs:02d}"
 
 
-def ft_tqdm(lst: range):
+def ft_tqdm(lst: range) -> None:
     """A minimal tqdm-like progress bar using yield."""
     total = len(lst)
     if total == 0:
@@ -47,8 +46,6 @@ def ft_tqdm(lst: range):
             bar = "=" * filled + " " * (bar_len - filled)
 
         line = prefix + bar + suffix
-        sys.stdout.write("\r" + line)
-        sys.stdout.flush()
+        print("\r" + line, end="", flush=True)
 
-    sys.stdout.write("\n")
-    sys.stdout.flush()
+    print()
